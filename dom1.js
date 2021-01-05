@@ -1,4 +1,3 @@
-var sports = document.getElementById("Football")
-console.log(sports)
-console.dir(sports)
+var sports = document.getElementById("Football").innerHTML = "Football";
+
 
