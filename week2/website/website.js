@@ -7,10 +7,10 @@ var nav1 = document.createElement("a");
 var nav2 = document.createElement("a");
 var nav3 = document.createElement("a");
 var nav4 = document.createElement("a");
-nav1.textContent = "HOME";
-nav2.textContent = "ABOUT";
-nav3.textContent = "CONTACT";
-nav4.textContent = "LOCATION";
+nav1.textContent = " HOME ";
+nav2.textContent = " ABOUT ";
+nav3.textContent = " CONTACT ";
+nav4.textContent = " LOCATION ";
 
 // Links to //
 nav.appendChild(nav1);
