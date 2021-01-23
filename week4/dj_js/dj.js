@@ -38,7 +38,7 @@ square.style.background = "orange"
 });
 
 document.addEventListener("keydown", function(event) {
-    var x = event.key;
+    var a = event.key;
     if (a === "b" || a === "B") {
         square.style.background = "blue"
     }
