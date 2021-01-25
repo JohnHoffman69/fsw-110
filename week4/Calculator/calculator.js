@@ -38,8 +38,8 @@ btn1.id = 'submit1';
 btn1.textContent = 'submit';
 document.querySelector('#container1').append(btn1);
 btn1.onclick = function() {
-    var a = document.querySelector('#field3').value
-    var b = document.querySelector('#field4').value
+    var a = document.querySelector('#field1').value
+    var b = document.querySelector('#field2').value
     var end2 = document.createElement('p')
     end2.textContent = parseInt(a) + parseInt(b)
     document.querySelector('#container1').append(end2)
@@ -76,8 +76,8 @@ btn2.id = 'submit2';
 btn2.textContent = 'submit';
 document.querySelector('#container2').append(btn2);
 btn2.onclick = function() {
-    var a = document.querySelector('#field1').value
-    var b = document.querySelector('#field2').value
+    var a = document.querySelector('#field3').value
+    var b = document.querySelector('#field4').value
     var end1 = document.createElement('p')
     end1.textContent = parseInt(a) - parseInt(b)
     document.querySelector('#container2').append(end1)
