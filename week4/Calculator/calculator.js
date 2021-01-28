@@ -14,7 +14,7 @@ box1.style.cssText = 'border: solid black 10px;  background-color: red';
 document.body.append(box1);
 //first input
 var inputBox1 = document.createElement('input');
-inputBox1.id = 'field3';
+inputBox1.id = 'field1';
 inputBox1.placeholder = 'num1';
 document.querySelector('#container1').append(inputBox1);
 //addition sign
@@ -24,7 +24,7 @@ additionSign.textContent = '+';
 document.querySelector('#container1').append(additionSign);
 //second input
 var inputBox2 = document.createElement('input');
-inputBox2.id = 'field4';
+inputBox2.id = 'field2';
 inputBox2.placeholder = 'num2';
 document.querySelector('#container1').append(inputBox2);
 //break
@@ -40,9 +40,9 @@ document.querySelector('#container1').append(btn1);
 btn1.onclick = function() {
     var a = document.querySelector('#field1').value
     var b = document.querySelector('#field2').value
-    var end2 = document.createElement('p')
-    end2.textContent = parseInt(a) + parseInt(b)
-    document.querySelector('#container1').append(end2)
+    var end1 = document.createElement('p')
+    end1.textContent = parseInt(a) + parseInt(b)
+    document.querySelector('#container1').append(end1)
 }
 
 //subtract
@@ -52,7 +52,7 @@ box2.style.cssText = 'border: solid black 10px;  background-color: blue; '
 document.body.append(box2);
 //first input
 var inputBox3 = document.createElement('input');
-inputBox3.id = 'field1';
+inputBox3.id = 'field3';
 inputBox3.placeholder = 'num1';
 document.querySelector('#container2').append(inputBox3);
 //subtraction sign
@@ -62,7 +62,7 @@ subtractionSign.textContent = '-';
 document.querySelector('#container2').append(subtractionSign);
 //second input
 var inputBox4 = document.createElement('input');
-inputBox4.id = 'field2';
+inputBox4.id = 'field4';
 inputBox4.placeholder = 'num2';
 document.querySelector('#container2').append(inputBox4);
 //break
@@ -78,16 +78,16 @@ document.querySelector('#container2').append(btn2);
 btn2.onclick = function() {
     var a = document.querySelector('#field3').value
     var b = document.querySelector('#field4').value
-    var end1 = document.createElement('p')
-    end1.textContent = parseInt(a) - parseInt(b)
-    document.querySelector('#container2').append(end1)
+    var end2 = document.createElement('p')
+    end2.textContent = parseInt(a) - parseInt(b)
+    document.querySelector('#container2').append(end2)
 }
 
 //multiply
 document.createElement('div')
 var box3 = document.createElement('div');
 box3.id = 'container3';
-box3.style.cssText = 'border: solid black 10px; background-color: orange ';
+box3.style.cssText = 'border: solid black 10px; background-color: yellow ';
 document.body.append(box3);
 //first input
 var inputBox5 = document.createElement('input');
