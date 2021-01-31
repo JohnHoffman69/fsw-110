@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\fsw-105"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "fsw-110"
+	}
+}
