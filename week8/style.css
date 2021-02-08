@@ -1,0 +1,15 @@
+body {
+  
+  color: blue;
+  font-family: 'Roboto', sans-serif;
+}
+
+.size {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button {
+  background-color: yellowgreen;
+}
+
