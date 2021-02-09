@@ -1,5 +1,8 @@
-let redBox = document.querySelector(".red-box");
+const box = document.querySelector(".red-box");
 
-redBox.addEventListener("mousemove", (e) => {
-    redBox.textContent = `X: ${e.clientX} | Y: ${e.clientY}`;
-});
+box.addEventListener('pointermove', (event) => {
+    var x = event.clientX;
+    var y = event.clientY;
+    box.textContent = `X: ${event.clientX}, Y: ${event.clientY}`;
+}
+)
