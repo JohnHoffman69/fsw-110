@@ -1,16 +1,85 @@
 body {
     background-image: url(https://images.unsplash.com/photo-1547534887-8d299f2c126b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=60);
-    color: white;
+    color:black;
     font-family: 'Roboto', sans-serif;
 }
 
 
-
-.size {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-button {
-    background-color: grey;
+
+html {
+    text-align: center;
+    font-family: 'Markazi Text';
+    font-weight: 400;
+    
+    
+}
+
+header {
+    margin: 40px;
+    background: -webkit-linear-gradient(rgb(255, 254, 250), rgb(61, 178, 32));
+      font-size: 20px;
+}
+
+input {
+    border: none;
+    padding: 6px;
+}
+
+#add {
+    margin-bottom: 50px;
+    padding: 5px;
+}
+
+#add:hover {
+    background-color: goldenrod;
+}
+
+.list {
+    margin-left: 9%;
+    margin-right: 9%;
+    list-style-type: none;
+    text-align: center;
+    padding-left: 5px;
+}
+
+ul li:nth-child(odd) {
+    background: green;
+}
+
+ul li:hover {
+    background: rgb(30, 255, 0);
+}
+
+
+
+@media only screen and (min-width: 600px) { 
+
+header {
+    font-size: 30px;
+}
+
+input {
+    font-size: 15px;
+}
+
+#add {
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+#delete {
+    font-size: 15px;
+}
 }

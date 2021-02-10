@@ -1,25 +1,40 @@
-let form = document['todo list']
+const form = document.getElementById("todolist");
+const task = document.getElementById("task");
+const description = document.getElementById("description");
 
-//delete function
-function removeItem() {
-    this.parentNode.parentNode.removeChild(this.parentNode)
-}
-//submit event
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    for (let i = 0; i < form.length - 1; i++) {
-        const li = document.createElement('li')
-        li.textContent = `${form[i].value}`
-        var input = document.createElement("input");
-        input.value = "Remove"
-        input.type = 'button'
-        input.id = "Item"
-        input.onclick = removeItem;
-        li.appendChild(input)
-        document.getElementsByTagName('ol')[0].append(li)
-    }
-    document.querySelector("form").reset();
-    document.getElementsByTagName('li')[0].append[input]
+
+form.addEventListener("submit", (e) => {
+
+    e.preventDefault()
+
+    const li = document.createElement("li");
+    const ul = document.getElementsByTagName("ul")[0];
+    ul.append(li);
+    li.classList = "list";
+
+    const h2 = document.createElement("h2");
+    h2.textContent = task.value;
+    h2.style.marginBottom = "7px";
+    li.appendChild(h2);
+
+    const h3 = document.createElement("h3");
+    h3.textContent = "- " + description.value;
+    h3.style.marginBottom = "15px";
+    li.appendChild(h3);
+   
+    const button = document.createElement("button");
+    button.setAttribute("id", "delete")
+    button.textContent = "Delete";
+    button.style.marginBottom = "15px";
+    button.style.padding = "5px";
+    li.appendChild(button);
+
+    button.addEventListener("click", function(e){
+    h2.parentNode.removeChild(h2);
+    h3.parentNode.removeChild(h3);
+    button.parentNode.removeChild(button);
+    });
+
+    form.reset();
     
-
 })
